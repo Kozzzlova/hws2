@@ -1,11 +1,17 @@
 .App {
-    --header_height: 60px;
+   --header_height: 60px;
+
+   max-width: 1280px;
+   width: 100%;
+   padding: 0 70px;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: flex-end;
 }
 
 .hw {
-
 }
 
 .hwTitle {
-
 }
