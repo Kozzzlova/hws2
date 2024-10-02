@@ -1,15 +1,49 @@
 .radio {
+   position: relative;
+   appearance: none; /* Убираем стандартный вид радио-кнопки */
+   width: 20px;
+   height: 20px;
+   border: 1px solid black;
+   border-radius: 50%;
+   outline: none;
+   cursor: pointer;
 }
 
-.radio::before {
+.radio:checked {
+   background-color: white; /* Черная кнопка, если выбрана */
 }
-
 
 .radio:checked::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 10px;
+   height: 10px;
+   background-color: black;
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
 }
 
 .label {
+   display: flex;
+   gap: 13px;
+   position: relative;
+}
+
+.label::before {
 }
 
 .options {
+   display: flex;
+   flex-direction: column;
+   gap: 22px;
+}
+
+.span {
+   font-family: Montserrat;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 19.5px;
+   text-align: left;
 }

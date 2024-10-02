@@ -1,22 +1,64 @@
 .greetingForm {
+   font-family: Montserrat;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 17.07px;
+   color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   gap: 10px;
 }
 
 .inputAndButtonContainer {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 12px;
+   position: relative;
 }
 
 .error {
+   color: rgba(204, 0, 0, 1);
+   position: absolute;
+   bottom: -20px;
+   left: 0;
 }
 
 .input {
+   padding: 8px 12px;
+   min-width: 372px;
+   height: 36px;
+   border: 1px solid rgba(209, 209, 209, 1);
+   color: black;
+   font-family: Montserrat;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 19.5px;
 }
 
 .input:focus {
 }
 
 .errorInput {
+   border-color: rgba(204, 0, 0, 1);
 }
 
 .button {
+   width: 78px;
+   height: 36px;
+   background-color: rgba(0, 102, 204, 1);
+   border-radius: 3px;
+   font-weight: 600;
+   color: rgba(255, 255, 255, 1);
+   font-size: 14px;
+   line-height: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-transform: capitalize;
+   cursor: pointer;
 }
 
 .button:focus {
@@ -26,10 +68,21 @@
 }
 
 .button:disabled {
+   opacity: 50%;
+   cursor: auto;
 }
 
 .text {
 }
 
 .greeting {
+   color: rgba(0, 0, 0, 1);
+   font-weight: 500;
+   padding-top: 10px;
+}
+
+.hwTitle {
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 26.82px;
 }

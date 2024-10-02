@@ -3,15 +3,22 @@
 
    max-width: 1280px;
    width: 100%;
-   padding: 0 70px;
+   padding: 65px 70px;
    display: flex;
    flex-direction: column;
    align-items: stretch;
    justify-content: flex-end;
+   margin: 0 auto;
 }
 
 .hw {
 }
 
 .hwTitle {
+   font-family: Montserrat;
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 26.82px;
+   padding-top: 25px;
+   margin-bottom: 25px;
 }

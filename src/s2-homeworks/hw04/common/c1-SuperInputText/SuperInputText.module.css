@@ -1,20 +1,40 @@
 .input:focus {
+   border-color: black;
 }
 
 .input {
+   width: 372px;
+   height: 36px;
+   border-color: rgba(209, 209, 209, 1);
+   outline: none;
+   border-style: solid;
+   border-radius: 5px;
 }
 
 .inputWrapper {
+   position: relative;
 }
 
 .superInput {
 }
 
 .errorInput {
+   border-color: rgba(204, 20, 57, 1);
 }
 
 .errorInput:focus {
+   border-color: rgba(204, 20, 57, 1);
 }
 
 .error {
+   color: rgba(204, 20, 57, 1);
+   font-family: Montserrat;
+   font-size: 10px;
+   font-weight: 400;
+   line-height: 12.19px;
+
+   position: absolute;
+   top: -15px;
+   left: 0;
+   text-transform: capitalize;
 }

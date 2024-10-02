@@ -1,18 +1,18 @@
-import React from 'react'
-import {pureAddUserCallback} from '../HW3'
+import React from 'react';
+import { pureAddUserCallback } from '../HW3';
 
-let initialState: any[]
+let initialState: any[];
 const setName = (a: any[]) => {
-    initialState = a
-}
+   initialState = a;
+};
 
 beforeEach(() => {
-    initialState = []
-})
+   initialState = [{ _id: '1', name: 'name' }];
+});
 
 test('name 1', () => {
-    pureAddUserCallback('name', setName, initialState)
-    expect(initialState.length).toBe(1)
-    expect(initialState[0].name).toBe('name')
-    expect(!!initialState[0]._id).toBe(true)
-})
+   pureAddUserCallback('name', setName, initialState);
+   expect(initialState.length).toBe(1);
+   expect(initialState[0].name).toBe('name');
+   expect(!!initialState[0]._id).toBe(true);
+});
